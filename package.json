@@ -1,0 +1,23 @@
+{
+  "name": "charles-cantin",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lana-12/Evaluation-Front-Charles-Cantin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lana-12/Evaluation-Front-Charles-Cantin/issues"
+  },
+  "homepage": "https://github.com/lana-12/Evaluation-Front-Charles-Cantin#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  }
+}
