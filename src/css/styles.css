@@ -63,9 +63,82 @@ nav .nav-link:hover, .reseau2:hover {
   font-weight: 900;
 }
 
-.btn__section__accueil {
-  background-color: #5B696B;
+.header__accueil {
+  width: 100%;
+  height: 100vh;
+  background: #5B696B;
+}
+
+.header__accueil__title {
+  margin-top: 180px;
+}
+.header__accueil__title p {
+  font-size: 2.5em;
   color: #fff;
+  padding-top: 40px;
+  font-weight: bolder;
+}
+
+.header__accueil {
+  width: 100%;
+  height: 100vh;
+  background: #5B696B;
+}
+
+.header__accueil__title {
+  margin-top: 180px;
+}
+.header__accueil__title p {
+  font-size: 2.5em;
+  color: #fff;
+  padding-top: 40px;
+  font-weight: bolder;
+}
+
+.header__tarifEtPrestation {
+  width: 100%;
+  height: auto;
+  background: #5B696B;
+  margin-bottom: 60px;
+}
+
+.header__tarifEtPrestation__title {
+  color: #fff;
+  margin: auto;
+  padding-bottom: 80px;
+  padding-top: 20px;
+}
+
+.header__contact {
+  width: 100%;
+  height: auto;
+  background: #5B696B;
+}
+
+.header__contact__title {
+  padding: 50px;
+  margin: auto 0px;
+  color: #fff;
+}
+
+.contact__intro {
+  margin-top: 30px;
+  font-size: 1.2em;
+}
+
+.form__contact {
+  margin-top: 50px;
+  padding-top: 20px;
+  background-color: rgba(251, 138, 1, 0.8431372549);
+  color: #fff;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.btn__section__accueil {
+  background-color: rgba(251, 138, 1, 0.8431372549);
+  color: #fff;
+  border: solid 1px #5B696B;
   box-shadow: 0px 5px 20px #080a0a;
   margin-top: 20px;
   font-size: 1.1em;
@@ -73,12 +146,12 @@ nav .nav-link:hover, .reseau2:hover {
 
 /* btn menu navBar*/
 .custom-toggler.navbar-toggler {
-  border: solid black 1px;
   margin-right: 10px;
+  color: rgba(251, 138, 1, 0.8431372549);
 }
 
 .btn-form {
-  background-color: rgba(251, 138, 1, 0.8431372549);
+  background-color: #5B696B;
   color: #fff;
   margin: 30px;
   font-size: 1.3em;
@@ -195,8 +268,7 @@ footer a:hover, .reseau2:hover {
 }
 
 .section__prestations__accueil {
-  background: grey url("../../../img/accueil/bg-section-prestation.jpg");
-  background-size: cover;
+  background: #5B696B;
 }
 
 .background__accueil__prestation {
@@ -277,4 +349,147 @@ footer a:hover, .reseau2:hover {
 }
 .section__accueil__info h4 {
   font-size: 1.5em;
+}
+
+.portfolio__items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.item__portfolio {
+  padding: 7px 10px;
+  font-size: 1.4em;
+  font-weight: 500;
+  color: #fff;
+  border: 2px solid;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.items__portfolio .active,
+.items__portfolio .item__portfolio:hover {
+  color: rgba(251, 138, 1, 0.8431372549);
+  border-color: #fff;
+  background: #5B696B;
+}
+
+.gallery {
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  background-color: rgba(251, 138, 1, 0.8431372549);
+  box-shadow: 0px 5px 25px #080a0a;
+  border-radius: 5px;
+  border: solid 1px #5B696B;
+}
+
+.image {
+  padding: 7px;
+}
+.image img {
+  border: solid 2px #fff;
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.image.hide {
+  display: none;
+}
+.image.show {
+  -webkit-animation: animate 0.4s ease;
+          animation: animate 0.4s ease;
+}
+
+.image:hover img {
+  transform: scale(1.1);
+}
+
+@-webkit-keyframes animate {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.bg__tarifEtPrestation {
+  background-color: rgba(251, 138, 1, 0.8431372549);
+  margin: 0px;
+}
+
+.bg__prestation {
+  background-color: #fff;
+  color: black;
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+
+.text__top {
+  padding: 20px 40px;
+}
+.text__top h2 {
+  font-size: 2.7em;
+}
+.text__top h3 {
+  font-size: 2.3em;
+}
+.text__top p {
+  font-size: 1.2em;
+}
+
+.cards__prestations {
+  display: flex;
+  max-width: 1300px;
+  margin: 10px auto 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card__prestation {
+  background-color: #5B696B;
+  width: 18rem;
+  height: 18rem;
+  margin: 20px;
+  color: #fff;
+  box-shadow: 0px 5px 25px #080a0a;
+  font-size: 1.1em;
+}
+
+.card-subtitle {
+  color: rgba(251, 138, 1, 0.8431372549);
+}
+
+.card-link:hover {
+  color: rgba(251, 138, 1, 0.8431372549);
+  font-weight: 70000;
+}
+
+.card-footer {
+  border-color: rgba(251, 138, 1, 0.8431372549);
+}
+
+.contact__intro {
+  margin-top: 30px;
+  font-size: 1.2em;
+}
+
+label {
+  color: black;
 }/*# sourceMappingURL=styles.css.map */
