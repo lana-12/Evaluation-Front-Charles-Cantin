@@ -30,9 +30,9 @@ ul {
   line-height: 2.5;
 }
 
-.logo__grey {
+.logo {
   border-radius: 10px;
-  max-width: 5rem;
+  width: 150px;
   border: solid 2px #fff;
   margin-left: 0px;
 }
@@ -61,6 +61,27 @@ img {
 nav .nav-link:hover, .reseau2:hover {
   color: rgba(251, 138, 1, 0.8431372549);
   font-weight: 900;
+}
+
+.btn__section__accueil {
+  background-color: #5B696B;
+  color: #fff;
+  box-shadow: 0px 5px 20px #080a0a;
+  margin-top: 20px;
+  font-size: 1.1em;
+}
+
+/* btn menu navBar*/
+.custom-toggler.navbar-toggler {
+  margin-right: 10px;
+  color: rgba(251, 138, 1, 0.8431372549);
+}
+
+.btn-form {
+  background-color: #5B696B;
+  color: #fff;
+  margin: 30px;
+  font-size: 1.3em;
 }
 
 .header__accueil {
@@ -133,28 +154,6 @@ nav .nav-link:hover, .reseau2:hover {
   color: #fff;
   border-radius: 10px;
   margin-bottom: 50px;
-}
-
-.btn__section__accueil {
-  background-color: rgba(251, 138, 1, 0.8431372549);
-  color: #fff;
-  border: solid 1px #5B696B;
-  box-shadow: 0px 5px 20px #080a0a;
-  margin-top: 20px;
-  font-size: 1.1em;
-}
-
-/* btn menu navBar*/
-.custom-toggler.navbar-toggler {
-  margin-right: 10px;
-  color: rgba(251, 138, 1, 0.8431372549);
-}
-
-.btn-form {
-  background-color: #5B696B;
-  color: #fff;
-  margin: 30px;
-  font-size: 1.3em;
 }
 
 footer {
