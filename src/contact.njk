@@ -1,3 +1,6 @@
+--- 
+title: Contact
+--- 
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -17,51 +20,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 
 <!--Bootstrap CSS-->
-    <link href="lien/bootstrap.min.css" rel="stylesheet">
+    <link href="/lien/bootstrap.min.css" rel="stylesheet">
 
 <!-- My CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 
 
 
-    <title>Contact - Charles Cantin - Photographe</title>
+    <title>{{title}} - {{mainTitle}}</title>
 </head>
 <body>
 
     <header class="header__contact">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md  p-md-3  ">
-        <div class="container-fluid">
-            
-            <a class="navbar-brand ml-3 " href="index.html"><img src="/img/logo-grey.png" alt="Logo de Charles Cantin - Photographe - & lien retour à l'accueil " title="Logo de Charles Cantin - Photographe - & lien retour à l'accueil" class="logo__grey img-fluid" ></a>
-            <button class="navbar-toggler  custom-toggler " type="button" data-toggle="collapse" data-target="#menuDeNavigation" aria-controls="menuDeNavigation" aria-expanded="false" aria-label="Toggle navigation">Menu
-            </button>
 
-            <div class="collapse navbar-collapse  " id="menuDeNavigation">
-                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active " aria-current="page" href="index.html">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="galery.html">PortFolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="galery.html">Tarifs & Prestations</a> 
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a> 
-                    </li>
-                    <li class="nav-item"><a href="https://www.facebook.com" target="_blank" class="nav-link " title=" Facebook" ><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li class="nav-item"><a href="https://www.instagram.com" target="_blank" title="Instragram"  class="nav-link "><i class="fa fa-instagram"></i></a>
-                    </li>
-                    <li class="nav-item"><a href="https://www.linkedin.com" target="_blank" title="Instragram"  class="nav-link "><i class="fa fa-linkedin"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-        <h1 class="center header__contact__title">Contact</h1>
+    <!-- Navbar -->
+        {% include "navBar.njk" %}
+
+        <h1 class="center header__contact__title">{{title}}</h1>
             
     </header >
 
@@ -125,13 +100,13 @@
             </div>
         </section>
 <!-- JQuery-->
-<script src="lien/jquery-3.6.0.min.js"></script>
+<script src="/lien/jquery-3.6.0.min.js"></script>
 <!-- Bootstrap JavaScript -->
-    <script src="lien/bootstrap.bundle.min.js"></script>
+    <script src="/lien/bootstrap.bundle.min.js"></script>
 <!-- My JavaScript -->
 <!-- POURQUOI CE LIEN EST DÉSACTIVÉ ? OUVREZ LE LIEN => c'est en commentaire -->
     <!-- <script src="javacript/form.js"></script> -->
-    <script src="javacript/script.js"></script>
+    <script src="/javacript/script.js"></script>
 
 </body>
 </html>
