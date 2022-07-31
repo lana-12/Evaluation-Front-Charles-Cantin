@@ -1,8 +1,7 @@
 --- 
 title: Bienvenue sur mon site
-msgLienActif : Vous êtes ici
---- 
 
+--- 
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -48,7 +47,7 @@ msgLienActif : Vous êtes ici
                                 <a class="nav-link" href="/galery">PortFolio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/tarif/">Tarifs & Prestations</a> 
+                                <a class="nav-link" href="/tarif/">Tarifs</a> 
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/contact/">Contact</a> 
@@ -74,7 +73,7 @@ msgLienActif : Vous êtes ici
         <section class="section__accueil__about container-md height">
                 <div class="row-cols-{12} title_presentation center">
                         <h2>Bonjour, je suis {{site.name}}</h2>
-                        <p class="pt-3">Photographe sur Montpellier et aux alentours</p>
+                        <p class="pt-3">Photographe sur {{site.city}} et aux alentours</p>
                 </div>
                     <div class="row body_presentation center ">
                         <div class="col-12 col-md-7 ">
@@ -98,13 +97,13 @@ msgLienActif : Vous êtes ici
                             </p>
                         </div>
                         <div class="col-12 col-md-5 p-5">
-                            <img class="accueil_photo_charles img-fluid img-thumbnail " src="./img/accueil/charlesCantin1.jpg" 
+                            <img class="accueil_photo_charles img-fluid img-thumbnail " title='Photo de {{site.name}}' src="./img/accueil/charlesCantin1.jpg" 
                             alt="Photo de Charles Cantin" loading="lazy" >
     
-                            <img class="accueil_photo_charles img-fluid img-thumbnail" src="./img/accueil/charlesCantin2.jpg" 
+                            <img class="accueil_photo_charles img-fluid img-thumbnail" title='Photo de {{site.name}}' src="./img/accueil/charlesCantin2.jpg" 
                             alt="Photo de Charles Cantin" loading="lazy">
                 
-                            <img class="accueil_photo_charles img-fluid img-thumbnail" src="./img/accueil/charlesCantin3.jpg" 
+                            <img class="accueil_photo_charles img-fluid img-thumbnail" title='Photo de {{site.name}}' src="./img/accueil/charlesCantin3.jpg" 
                             alt="Photo de Charles Cantin" loading="lazy">
                         </div>
                     </div>
