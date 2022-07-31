@@ -27,11 +27,10 @@ title: Bienvenue sur mon site
     <link rel="stylesheet" href="/css/styles.css">
 
 
-    <title>{{title}} {{site.maintitle}}</title>
+    <title> {{title}} - {{site.mainTitle}} </title>
 </head>
 <body>
     <header class="header__accueil" >
-
         <!-- Navbar -->
             <nav class="navbar navbar-expand-md  p-md-3  ">
                 <div class="container-fluid">
@@ -43,7 +42,7 @@ title: Bienvenue sur mon site
                     <div class="collapse navbar-collapse  " id="menuDeNavigation">
                         <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active " aria-current="page" href="/">Accueil</a>
+                                <a class="nav-link "   href="/">Accueil</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/galery">PortFolio</a>
@@ -54,11 +53,11 @@ title: Bienvenue sur mon site
                             <li class="nav-item">
                                 <a class="nav-link" href="/contact/">Contact</a> 
                             </li>
-                            <li class="nav-item"><a href="https://www.facebook.com" target="_blank" class="nav-link " title=" Facebook" ><i class="fa fa-facebook"></i></a>
+                            <li class="nav-item"><a href="{{social.facebook}}" target="_blank" class="nav-link " title=" Facebook" ><i class="fa fa-facebook"></i></a>
                             </li>
-                            <li class="nav-item"><a href="https://www.instagram.com" target="_blank" title="Instragram"  class="nav-link "><i class="fa fa-instagram"></i></a>
+                            <li class="nav-item"><a href="{{social.instagram}}" target="_blank" title="Instragram"  class="nav-link "><i class="fa fa-instagram"></i></a>
                             </li>
-                            <li class="nav-item"><a href="https://www.linkedin.com" target="_blank" title="Instragram"  class="nav-link "><i class="fa fa-linkedin"></i></a>
+                            <li class="nav-item"><a href="{{social.linkedin}}" target="_blank" title="Instragram"  class="nav-link "><i class="fa fa-linkedin"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -67,14 +66,14 @@ title: Bienvenue sur mon site
 
 <!-- Title + paragraph-->
             <div class="header__accueil__title center">
-                <h1>Charles Cantin</h1>
+                <h1>{{site.name}}</h1>
                 <p>Photographe</p>   
             </div>
     </header>
     <main class="mt-5">
         <section class="section__accueil__about container-md height">
                 <div class="row-cols-{12} title_presentation center">
-                        <h2>Bonjour, je suis Charles Cantin</h2>
+                        <h2>Bonjour, je suis {{site.name}}</h2>
                         <p class="pt-3">Photographe sur Montpellier et aux alentours</p>
                 </div>
                     <div class="row body_presentation center ">
@@ -224,7 +223,7 @@ title: Bienvenue sur mon site
     
         <section class="section__accueil__info container ">
             <div class="row-cols-{12} ">
-                <h4 class="center height">Photographe sur Montpellier et aux alentours</h4>
+                <h4 class="center height">Photographe sur {{city}} et aux alentours</h4>
                 
             </div>
             <div class="row ">
