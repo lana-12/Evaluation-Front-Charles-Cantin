@@ -19,3 +19,70 @@ fields:
   label: Phrase d'accroche
   description: Le paragraphe d'accroche en dessous du title_hero qui remplacera =  Photographe
     sur Montpellier et aux alentours
+- name: p_accueil_about_1
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: 'Paragraphe 1 '
+  description: 'Vous allez changer ce paragraphe : &lt; Véritable passionné par la
+    photographie, je l’ai toujours pratiqué en tant qu’amateur.&gt;'
+- name: p_accueil_about_2
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Paragraphe 2
+  description: Vous allez modifier ce texte :&lt; Aujourd’hui c’est en tant que professionnel
+    que je vous propose mes services.&gt;
+- name: p_accueil_about_3
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Paragraphe 3
+  description: 'Vous allez changer ce texte : &lt;Je travaille avec mon âme, mon cœur
+    et mon instinct pour créer et immortaliser les souvenirs de votre vie.&gt;'
+- name: p_accueil_about_4
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Paragraphe 4
+  description: 'Vous allez changer le texte : &lt;Photographier en lumière naturelle
+    une future maman, ou votre bébé.&gt;'
+- name: p_accueil_about_5
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Paragraphe 5
+  description: 'Vous allez changer le texte : &lt;Réaliser un reportage photo pour
+    votre mariage, ou capturer une complicité lors d''une séance en famille ou bien
+    en couple.&gt;'
+- name: p_accueil_about_6
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Paragraphe 6
+  description: 'Vous allez changer le texte : &lt;Vivez un moment unique et dans la
+    bonne humeur à chaque séance photo.&gt;'
