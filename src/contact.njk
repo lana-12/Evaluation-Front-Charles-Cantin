@@ -43,6 +43,15 @@ title: Contact
 
 <main >
     <section class="contact__intro" name="contact__intro">
+
+
+
+    {% for contact in collections.prices %}
+        <h2>{{ contact.data.titre }}</h2>
+        <p>{{ contact.data.texte }}</p>
+        <p>{{ contact }}</p>
+    {% endfor %}
+
         <h2 class="center">Maintenant c'est à vous  </h2>
         <p class="center p-3 height">Parlez de vous, de votre futur projet, je veux tout savoir.<br>Plus j'en sais sûr vous et plus vos photos seront celles dont vous rêvez. </p>
             
