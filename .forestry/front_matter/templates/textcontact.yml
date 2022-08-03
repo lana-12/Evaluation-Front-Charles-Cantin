@@ -16,5 +16,3 @@ fields:
     schema:
       format: markdown
   label: Texte
-pages:
-- pages/contact.md
