@@ -86,3 +86,5 @@ fields:
   label: Paragraphe 6
   description: 'Vous allez changer le texte : &lt;Vivez un moment unique et dans la
     bonne humeur à chaque séance photo.&gt;'
+pages:
+- src/welcome/accueil-a-propos.md
