@@ -1,4 +1,21 @@
 ---
 label: Titre et phrase d'accroche
 hide_body: false
-fields: []
+fields:
+- name: title_hero
+  type: text
+  config:
+    required: false
+  label: Titre D'accroche
+  description: Titre d'accroche "hero" qui remplacera = Bonjour, je suis Charles cantin
+- name: p_hero
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Phrase d'accroche
+  description: Le paragraphe d'accroche en dessous du title_hero qui remplacera =  Photographe
+    sur Montpellier et aux alentours
