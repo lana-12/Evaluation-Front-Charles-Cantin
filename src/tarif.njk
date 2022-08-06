@@ -4,30 +4,8 @@ title : Tarifs
 --- 
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% include 'headbase.njk'%}
 
-<!-- FAVICON a mettre ds img avant--> 
-    <link rel="icon" type="image/png" href="/img/favicon.png">
-
-<!-- Lien pour les icones -->
-    <script src="https://use.fontawesome.com/4c7b786387.js"></script>
-    
-<!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-
-<!--Bootstrap CSS-->
-    <link href="/lien/bootstrap.min.css" rel="stylesheet">
-
-<!-- My CSS -->
-    <link rel="stylesheet" href="/css/styles.css">
-
-    <title>{{title}} - {{site.mainTitle}}</title>
-</head>
     
 <body>
     <header class="header__tarifEtPrestation" >
@@ -41,7 +19,10 @@ title : Tarifs
                 <h1>{{title}}</h1>   
             </div>
     </header>
-
+{% for encore in collections.contenus %}
+        <h2>{{ encore.data.titre }}</h2>
+        <p>{{ encore.data.texte }}</p>
+    {% endfor %}
 <main class=" bg__tarifEtPrestation">
 
     <div class="bg__prestation">

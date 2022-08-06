@@ -1,0 +1,33 @@
+{% block head %}
+<title> 
+{% if title %}
+        {{ title }} - {{site.mainTitle}}
+    {% else %}
+        {{site.title}}
+    {% endif %}
+    </title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- FAVICON a mettre ds img avant--> 
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
+<!-- Lien pour les icones -->
+    <script src="https://use.fontawesome.com/4c7b786387.js"></script>
+
+<!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+<!-- Boostrap CSS -->
+    <link rel="stylesheet" href="/lien/bootstrap.min.css">
+<!-- My CSS -->
+    <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+
+
+{% endblock %}

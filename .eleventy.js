@@ -1,7 +1,7 @@
 /* Config file */
 
 module.exports = function(eleventyConfig){
-    /* Tout ce qui est ds le src est cloné ds public */
+    /* Tout ce qui est ds le src est cloné ds public et mettre tout les folders qui doivent être cloner ds public  */
         eleventyConfig.addPassthroughCopy("src/img")
         eleventyConfig.addPassthroughCopy("src/css")
         eleventyConfig.addPassthroughCopy("src/javascript")

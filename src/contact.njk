@@ -1,35 +1,10 @@
 --- 
 title: Contact
-
 --- 
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% include 'headbase.njk'%}
 
-<!-- FAVICON a mettre ds img avant--> 
-    <link rel="icon" type="image/png" href="/img/favicon.png">
-
-<!-- Lien pour les icones -->
-    <script src="https://use.fontawesome.com/4c7b786387.js"></script>
-    
-<!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-
-<!--Bootstrap CSS-->
-    <link href="/lien/bootstrap.min.css" rel="stylesheet">
-
-<!-- My CSS -->
-    <link rel="stylesheet" href="/css/styles.css">
-
-
-
-    <title>{{title}} - {{mainTitle}}</title>
-</head>
 <body>
 
     <header class="header__contact">
@@ -44,13 +19,15 @@ title: Contact
 <main >
     <section class="contact__intro" name="contact__intro">
 
-
-
-    {% for contact in collections.prices %}
+{% block headergallery  %}
+    {% for contact in collections.contacts %}
         <h2>{{ contact.data.titre }}</h2>
-        <p>{{ contact.data.texte }}</p>
-        <p>{{ contact }}</p>
+        
     {% endfor %}
+
+{% endblock %}
+    
+
 
         <h2 class="center">Maintenant c'est à vous  </h2>
         <p class="center p-3 height">Parlez de vous, de votre futur projet, je veux tout savoir.<br>Plus j'en sais sûr vous et plus vos photos seront celles dont vous rêvez. </p>

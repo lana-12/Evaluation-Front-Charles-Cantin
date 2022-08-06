@@ -4,64 +4,11 @@ title: Bienvenue sur mon site
 --- 
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- FAVICON a mettre ds img avant--> 
-    <link rel="icon" type="image/png" href="/img/favicon.png">
-
-<!-- Lien pour les icones -->
-    <script src="https://use.fontawesome.com/4c7b786387.js"></script>
-
-<!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-
-<!-- Boostrap CSS -->
-    <link rel="stylesheet" href="/lien/bootstrap.min.css">
-<!-- My CSS -->
-    <link rel="stylesheet" href="/css/styles.css">
-
-
-    <title> {{title}} - {{site.mainTitle}} </title>
-</head>
+{% include 'headbase.njk'%}
 <body>
     <header class="header__accueil" >
         <!-- Navbar -->
-            <nav class="navbar navbar-expand-md  p-md-3  ">
-                <div class="container-fluid">
-                    
-                    <a class="navbar-brand ml-3 " href="index.html"></a>
-                    <button class="navbar-toggler  custom-toggler  " type="button" data-toggle="collapse" data-target="#menuDeNavigation" aria-controls="menuDeNavigation" aria-expanded="false" aria-label="Toggle navigation">Menu
-                    </button>
-    
-                    <div class="collapse navbar-collapse  " id="menuDeNavigation">
-                        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link " title=" {{msgLienActif}} "  href="/">Accueil</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/galery">PortFolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/tarif/">Tarifs</a> 
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/contact/">Contact</a> 
-                            </li>
-                            <li class="nav-item"><a href="{{social.facebook}}" target="_blank" class="nav-link " title=" Facebook" ><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li class="nav-item"><a href="{{social.instagram}}" target="_blank" title="Instragram"  class="nav-link "><i class="fa fa-instagram"></i></a>
-                            </li>
-                            <li class="nav-item"><a href="{{social.linkedin}}" target="_blank" title="Instragram"  class="nav-link "><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+            {% include 'navBar.njk'%}
 
 <!-- Title + paragraph-->
             <div class="header__accueil__title center">
@@ -74,6 +21,12 @@ title: Bienvenue sur mon site
                 <div class="row-cols-{12} title_presentation center">
                         <h2>Bonjour, je suis {{site.name}}</h2>
                         <p class="pt-3">Photographe sur {{site.city}} et aux alentours</p>
+TEST ELEVENTY
+                {% for accueilAPropos in collections.welcome %}
+        <h2>{{ accueilAPropos.data.title_hero }}</h2>
+        <p>{{ accueilAPropos.data.p_accueil_about_1 }}</p>
+        
+    {% endfor %}
                 </div>
                     <div class="row body_presentation center ">
                         <div class="col-12 col-md-7 ">
