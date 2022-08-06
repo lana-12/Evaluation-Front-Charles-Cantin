@@ -1,9 +1,4 @@
 ---
 label: text
 hide_body: false
-fields:
-- name: texte_test
-  type: text
-  config:
-    required: false
-  label: texte
+fields: []

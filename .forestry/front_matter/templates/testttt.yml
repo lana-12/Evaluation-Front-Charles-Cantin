@@ -1,0 +1,11 @@
+---
+label: testttt
+hide_body: false
+fields:
+- name: kk_
+  type: blocks
+  label: kk,
+  template_types: []
+  config:
+    min: 
+    max: 
