@@ -22,8 +22,13 @@ title: Contact
 {% block headergallery  %}
     {% for contact in collections.contacts %}
         <h2>{{ contact.data.titre }}</h2>
+<<<<<<< HEAD
         <h2>{{ contact.data.content }}</h2>
         
+=======
+        <h3>{{ contact.data.content }}</h3>
+        <h3>{{ contact.data.contenu }}</h3>
+>>>>>>> 2100fd7c132314057440adf39f9d58ab82407b55
     {% endfor %}
 
 {% endblock %}
