@@ -31,14 +31,30 @@ ul {
 }
 
 .logo {
-  border-radius: 10px;
-  width: 150px;
+  width: 100px;
   border: solid 2px #fff;
   margin-left: 0px;
 }
 
 .logo__grey {
   border: #5B696B;
+  border: solid 2px #fff;
+  border-radius: 5px;
+}
+
+.back {
+  float: right;
+  font-size: 1em;
+  transition: 0.3s;
+  transition-property: color, font-weight;
+}
+.back:hover {
+  color: rgba(251, 138, 1, 0.8431372549);
+  font-weight: bolder;
+}
+
+.rocket {
+  margin: 20px;
 }
 
 body {
@@ -48,13 +64,8 @@ body {
 }
 
 h1 {
-  color: #fff;
+  color: #000;
   font-size: 4.5em;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 .nav-link {
@@ -78,7 +89,8 @@ nav .nav-link:hover, .reseau2:hover {
 /* btn menu navBar*/
 .custom-toggler.navbar-toggler {
   margin-right: 10px;
-  color: rgba(251, 138, 1, 0.8431372549);
+  color: #000;
+  font-size: 1.6em;
 }
 
 .btn-form {
@@ -92,7 +104,9 @@ nav .nav-link:hover, .reseau2:hover {
 .header__accueil {
   width: 100%;
   height: 100vh;
-  background: #5B696B;
+  background: #5B696B url("./../img/bg-header-home.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .header__accueil__title {
@@ -100,7 +114,7 @@ nav .nav-link:hover, .reseau2:hover {
 }
 .header__accueil__title p {
   font-size: 2.5em;
-  color: #fff;
+  color: #000;
   padding-top: 40px;
   font-weight: bolder;
 }
@@ -134,7 +148,9 @@ nav .nav-link:hover, .reseau2:hover {
 .header__contact {
   width: 100%;
   height: auto;
-  background: #5B696B;
+  background: #5B696B url("./../img/bg-contact.jpg");
+  background-size: cover;
+  background-position-y: center;
 }
 
 .header__contact__title {
@@ -269,6 +285,8 @@ footer a:hover, .reseau2:hover {
 .accueil_photo_charles {
   width: 200px;
   height: 200px;
+  background: #5B696B;
+  color: #fff;
 }
 
 .section__prestations__accueil {

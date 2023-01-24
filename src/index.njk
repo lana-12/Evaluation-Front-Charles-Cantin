@@ -12,7 +12,7 @@ title: Bienvenue sur mon site
 
 <!-- Title + paragraph-->
             <div class="header__accueil__title center">
-                <h1>{{site.name}}</h1>
+                <h1 id="accueil">{{site.name}}</h1>
                 <p>Photographe</p>   
             </div>
     </header>
@@ -21,7 +21,7 @@ title: Bienvenue sur mon site
                 <div class="row-cols-{12} title_presentation center">
                         <h2>Bonjour, je suis {{site.name}}</h2>
                         <p class="pt-3">Photographe sur {{site.city}} et aux alentours</p>
-TEST ELEVENTY hello
+TEST ELEVENTY:
                 {% for accueilAPropos in collections.welcome %}
         <h2>{{ accueilAPropos.data.title_hero }}</h2>
         <p>{{ accueilAPropos.data.p_accueil_about_1 }}</p>
@@ -50,6 +50,7 @@ TEST ELEVENTY hello
                             </p>
                         </div>
                         <div class="col-12 col-md-5 p-5">
+                            
                             <img class="accueil_photo_charles img-fluid img-thumbnail " title='Photo de {{site.name}}' src="./img/accueil/charlesCantin1.jpg" 
                             alt="Photo de Charles Cantin" loading="lazy" >
     
@@ -58,6 +59,7 @@ TEST ELEVENTY hello
                 
                             <img class="accueil_photo_charles img-fluid img-thumbnail" title='Photo de {{site.name}}' src="./img/accueil/charlesCantin3.jpg" 
                             alt="Photo de Charles Cantin" loading="lazy">
+                            
                         </div>
                     </div>
         </section>
@@ -185,7 +187,9 @@ TEST ELEVENTY hello
                 </div>
             </div>
         </section>
-    
+
+    <a class="rocket back" href='#accueil'><i class="fa fa-rocket" alt="Retour à la liste" title="Retour "></i>
+			</a>
     </main>
     
     

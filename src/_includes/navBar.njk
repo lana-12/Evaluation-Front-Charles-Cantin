@@ -1,9 +1,9 @@
 {% block navbar%}
 
-<nav class="navbar navbar-expand-md  p-md-3  ">
-            <div class="container-fluid mt-0">
+<nav class="navbar navbar-expand-md  shadow-5-strong  ">
+            {# <div class="container "> #}
                 
-                <a class="navbar-brand ml-3 " href="/"><img src="/img/logo-grey.png" alt="Logo de Charles Cantin - Photographe - & lien retour à l'accueil " title="Logo de Charles Cantin - Photographe - & lien retour à l'accueil" class="logo logo__grey img-fluid" ></a>
+                <a class="navbar-brand  " href="/"><img src="/img/logo-grey.png" alt="Logo de Charles Cantin - Photographe - & lien retour à l'accueil " title="Logo de Charles Cantin - Photographe - & lien retour à l'accueil" class="logo logo__grey " ></a>
                 <button class="navbar-toggler  custom-toggler  " type="button" data-toggle="collapse" data-target="#menuDeNavigation" aria-controls="menuDeNavigation" aria-expanded="false" aria-label="Toggle navigation">Menu
                 </button>
 
@@ -25,10 +25,10 @@
                         </li>
                         <li class="nav-item"><a href="{{instagram}}" target="_blank" title="Instragram"  class="nav-link "><i class="fa fa-instagram"></i></a>
                         </li>
-                        <li class="nav-item"><a href="{{linkedin}}" target="_blank" title="Instragram"  class="nav-link "><i class="fa fa-linkedin"></i></a>
+                        <li class="nav-item"><a href="{{linkedin}}" target="_blank" title="Linkedin"  class="nav-link "><i class="fa fa-linkedin"></i></a>
                         </li>
                     </ul>
                 </div>
-            </div>
+            {# </div> #}
         </nav>
 {% endblock navbar%}
