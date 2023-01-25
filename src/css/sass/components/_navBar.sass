@@ -1,10 +1,18 @@
 .nav-link
     color: $white
     font-size: 1.3em
-    
-nav .nav-link:hover, .reseau2:hover
+    text-shadow: 1px 1px 2px #000
+    transition: 0.3s
+    transition-property: color, font-weight
+
+.nav-link:hover, .reseau2:hover
     color: $oranger
     font-weight: 900
-    
-// .navbar
-//     background: $grey
+
+/* btn menu navBar*/
+.custom-toggler.navbar-toggler
+    // border: solid black 1px
+    background-color: $oranger
+    margin-right: 10px
+    color: $white
+    font-size: 1.6em

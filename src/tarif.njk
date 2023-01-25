@@ -16,7 +16,7 @@ title : Tarifs
 
 <!-- Title -->
             <div class="header__tarifEtPrestation__title center">
-                <h1>{{title}}</h1>   
+                <h1 id="back">{{title}}</h1>   
             </div>
     </header>
 {% for encore in collections.contenus %}
@@ -119,7 +119,11 @@ title : Tarifs
         </section>
 
     </div>
-    
+        <a class="rocket back" href='#back'>
+            <i class="fa fa-rocket" alt="Retour en haut de la page" title="Retour en haut de la page">
+            </i>
+		</a>
+
 </main>
 
 <!-- Footer -->

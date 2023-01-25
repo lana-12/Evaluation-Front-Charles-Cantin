@@ -17,7 +17,7 @@ title: PortFolio
 
 <!-- Title + paragraph-search-->
             <div class="header__portfolio__title">
-                <h1 class="mb-4 ">{{title}}</h1>
+                <h1 class="mb-4 pt-4" id="back">{{title}}</h1>
                 <section class=" container">
                     <nav>
                         <div class="items__portfolio ">
@@ -29,7 +29,7 @@ title: PortFolio
                 
                             <div class="row portfolio__items ">
                                 <p class="item__portfolio" data-name="baby">Bébé</p>
-                                <p class="">Choisissez la catégorie</p>
+                                <p class="p__item">Choisissez la catégorie</p>
                                 <p class="item__portfolio" data-name="couple">Couple</p>
                             </div>
                 
@@ -339,6 +339,11 @@ title: PortFolio
         </div>
 
     </section>
+        <a class="rocket back" href='#back'>
+            <i class="fa fa-rocket" alt="Retour en haut de la page" title="Retour en haut de la page">
+            </i>
+		</a>
+
 </main>    
     <!-- Footer -->
     {% include "footer.njk" %}

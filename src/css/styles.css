@@ -30,16 +30,18 @@ ul {
   line-height: 2.5;
 }
 
-.logo {
-  width: 100px;
+.logo__grey {
   border: solid 2px #fff;
+  border-radius: 5px;
+  width: 100px;
   margin-left: 0px;
 }
 
-.logo__grey {
-  border: #5B696B;
+.logo__orange {
   border: solid 2px #fff;
   border-radius: 5px;
+  width: 200px;
+  margin-left: 0px;
 }
 
 .back {
@@ -63,19 +65,25 @@ body {
   font-family: "Satisfy", cursive;
 }
 
-h1 {
-  color: #000;
-  font-size: 4.5em;
-}
-
 .nav-link {
   color: #fff;
   font-size: 1.3em;
+  text-shadow: 1px 1px 2px #000;
+  transition: 0.3s;
+  transition-property: color, font-weight;
 }
 
-nav .nav-link:hover, .reseau2:hover {
+.nav-link:hover, .reseau2:hover {
   color: rgba(251, 138, 1, 0.8431372549);
   font-weight: 900;
+}
+
+/* btn menu navBar*/
+.custom-toggler.navbar-toggler {
+  background-color: rgba(251, 138, 1, 0.8431372549);
+  margin-right: 10px;
+  color: #fff;
+  font-size: 1.6em;
 }
 
 .btn__section__accueil {
@@ -84,13 +92,6 @@ nav .nav-link:hover, .reseau2:hover {
   box-shadow: 0px 5px 20px #080a0a;
   margin-top: 20px;
   font-size: 1.1em;
-}
-
-/* btn menu navBar*/
-.custom-toggler.navbar-toggler {
-  margin-right: 10px;
-  color: #000;
-  font-size: 1.6em;
 }
 
 .btn-form {
@@ -112,11 +113,17 @@ nav .nav-link:hover, .reseau2:hover {
 .header__accueil__title {
   margin-top: 180px;
 }
+.header__accueil__title h1 {
+  color: #fff;
+  font-size: 4.5em;
+  text-shadow: 1px 1px 2px black;
+}
 .header__accueil__title p {
   font-size: 2.5em;
   color: #000;
   padding-top: 40px;
   font-weight: bolder;
+  text-shadow: 1px 1px 2px #fff;
 }
 
 .header__portfolio {
@@ -129,12 +136,17 @@ nav .nav-link:hover, .reseau2:hover {
   color: #fff;
   text-align: center;
   padding-bottom: 30px;
+  background: #5B696B url("./../img/bg-portfolio.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .header__tarifEtPrestation {
   width: 100%;
   height: auto;
-  background: #5B696B;
+  background: #5B696B url("./../img/bg-tarifEtPrestation.jpg");
+  background-size: cover;
+  background-position: center;
   margin-bottom: 60px;
 }
 
@@ -165,7 +177,7 @@ nav .nav-link:hover, .reseau2:hover {
 }
 
 .form__contact {
-  margin-top: 50px;
+  margin-top: 10px;
   padding-top: 20px;
   background-color: rgba(251, 138, 1, 0.8431372549);
   color: #fff;
@@ -383,10 +395,20 @@ footer a:hover, .reseau2:hover {
   font-size: 1.4em;
   font-weight: 500;
   color: #fff;
+  text-shadow: 1px 1px 2px #000;
   border: 2px solid;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+.p__item {
+  padding: 7px 10px;
+  font-size: 1.4em;
+  font-weight: 500;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+  text-decoration: underline;
 }
 
 .items__portfolio .active,
